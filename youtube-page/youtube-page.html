@@ -16,16 +16,32 @@
             display: block;
         }
 
-        .video-title {
-            font-size: 18px;
-            font-weight: bold;
-            width: 300px;
-        }
+        
         .video-preview {
             width: 300px;
             display: inline-block;
             vertical-align: top;
             margin-right: 15px;
+        }
+
+        .channel-picture{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+            width: 50px;
+        }
+
+        .video-info {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+        }
+
+        .profile-picture {
+            width: 100%;
+            height: auto;
         }
 
     </style>
@@ -38,13 +54,25 @@
     
 
     <div class="video-preview">
-       <img class="thumbnail" src="thumbnail/sundarpichai.png">
-    
 
-        <p class="video-title">Talking tech and AI with Google CEO Sundar Pichai!</p>
-        <p class="video-author">marques Brwonlee</p>
+        <div>
+            <img class="thumbnail" src="thumbnail/sundarpichai.png">
+        </div>
 
-        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        <div>
+
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/marquesBrwonlee.png" alt="channelpictures">
+            </div>
+
+            <div class="video-info">
+                <p class="video-title">Talking tech and AI with Google CEO Sundar Pichai!</p>
+                <p class="video-author">marques Brwonlee</p>
+
+                <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>  
+        </div>
+
     </div>
 
     <div class="video-preview">
