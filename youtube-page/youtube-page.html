@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        p{
+            font-family: Roboto, Arial;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
         .thumbnail {
             width: 300px;
             height: auto; 
@@ -40,8 +45,32 @@
         }
 
         .profile-picture {
-            width: 100%;
+            width: 40px;
             height: auto;
+            border-radius: 50%;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 0px; 
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
+        .thumbnail-row{
+            margin-bottom: 12px;
+        }
+
+        .video-author {
+            font-size: 12px;
+            color: rgb(96,96,96);
+            margin: 4px;
+        }
+
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96,96,96);
         }
 
     </style>
@@ -55,7 +84,7 @@
 
     <div class="video-preview">
 
-        <div>
+        <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnail/sundarpichai.png">
         </div>
 
@@ -67,7 +96,7 @@
 
             <div class="video-info">
                 <p class="video-title">Talking tech and AI with Google CEO Sundar Pichai!</p>
-                <p class="video-author">marques Brwonlee</p>
+                <p class="video-author">Marques Brownlee</p>
 
                 <p class="video-stats">3.4M views &#183; 6 months ago</p>
             </div>  
@@ -76,13 +105,26 @@
     </div>
 
     <div class="video-preview">
-       <img class="thumbnail" src="thumbnail/don'tlaugh.png">
-    
+        <div class="thumbnail-row">
+             <img class="thumbnail" src="thumbnail/don'tlaugh.png">
+        </div>
 
-        <p class="video-title">Try not to laugh challange</p>
-        <p class="video-author">markplier</p>
 
-        <p class="video-stats">19M views &#183; 4 years ago</p>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/markplier.png" alt="channelpictures">
+            </div>
+            <div class ="video-info">
+                <p class="video-title">Try not to laugh challange</p>
+                <p class="video-author">markplier</p>
+
+                <p class="video-stats">19M views &#183; 4 years ago</p>
+
+             </div>
+        </div>
+      
+        
+
     </div>
 
 </body>
